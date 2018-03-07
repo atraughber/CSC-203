@@ -38,4 +38,18 @@ public class HexProcessor
             // determine value if valid and determine decimal value
             if (Hex.isValid(hex)) {
                 decimal = Hex.parseInt(hex);
-                System.out.println("The equivalent decimal value is 
+                System.out.println("The equivalent decimal value is " + decimal);
+            }
+            else 
+                System.out.println("Invalid hexadecimal number.");
+                System.out.println(); // print blank line
+                
+            // prompt to see if user wants to run the program 
+            System.out.print ("Want to run? (enter y to run): "); 
+            response = input.next().charAt(0); 
+            System.out.println (); // print blank line
+        }
+        System.out.println ("Program has terminated."); 
+        System.out.println (); // print blank line     
+    }   
+}                                   
